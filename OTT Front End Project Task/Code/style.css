@@ -1,0 +1,170 @@
+/* Base styles */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: rgb(104, 94, 94);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-weight: 500;
+    color: white;
+}
+
+nav ul li #char{
+    color: red;
+    font-size: large;
+}
+
+nav ul li #char:hover{
+    color: white;
+    font-weight: 500;
+}
+
+.container #text {
+    font-size: 2em;
+    font-weight: bold;
+    color: #c5290f;
+    margin-left: 70%;
+    padding-top: 10%;
+    line-height: 0.8;
+}
+
+#content #h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #c5290f;
+    margin-left: 70%;
+}
+
+#content .btn {
+    margin: 5px;
+}
+
+#content #btn-1 {
+    margin-left: 70%;
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+    background-color: #e50714;
+    border-radius: 1px;
+}
+
+#content #btn-1:hover {
+    border: 1px solid white;
+    border-radius: 1px;
+}
+
+#content #btn-2 {
+    margin-top: 5px;
+    width: 82px;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 1px;
+}
+
+#content #btn-2:hover {
+    border: 1px solid black;
+    border-radius: 1px;
+}
+
+#content #btn-2:active {
+    border: 1px solid black;
+    border-radius: 1px;
+}
+
+.owl-carousel {
+    margin-left: 120px;
+    margin-top: 23.2vh;
+}
+
+.ep1, .ep2, .ep3, .ep4, .ep5, .ep6, .ep7 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#img1, #img2, #img3, #img4, #img5, #img6, #img7 {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+#img1T, #img2T, #img3T, #img4T, #img5T, #img6T, #img7T {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .container #text, #content #h1, #content #btn-1 {
+        margin-left: 60%;
+    }
+
+    .owl-carousel {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container #text, #content #h1, #content #btn-1 {
+        margin-left: 50%;
+    }
+
+    .owl-carousel {
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container #text, #content #h1, #content #btn-1 {
+        margin-left: 40%;
+        padding-top: 15%;
+    }
+
+    .owl-carousel {
+        margin-left: 60px;
+        margin-top: 20vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .container #text, #content #h1, #content #btn-1 {
+        margin-left: 20%;
+        padding-top: 20%;
+        font-size: 1.2em;
+    }
+
+    #content #btn-1, #content #btn-2 {
+        width: 100px;
+    }
+
+    .owl-carousel {
+        margin-left: 40px;
+        margin-top: 18vh;
+    }
+}
